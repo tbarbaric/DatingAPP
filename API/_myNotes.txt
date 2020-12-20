@@ -1,0 +1,15 @@
+1. To install dotnet-ef tool: 
+    * Go to nuget.org
+    * Search for "dotnet-ef" > choose the "dotnet-ef" result (first result ?!)
+    * Copy the command and run it in VS Code terminal ("dotnet tool install --global dotnet-ef --version 5.0.1")
+    * Notice that 5.0.1 is the version of .NET Runtime I'm using and EF Core I installed before (all have to be in sync ?!)
+    * Udemy Course Ref: 2.13 Creating the Connection string
+
+2. Create the first migration:
+    * In terminal: dotnet ef migrations add InitialCreate -o Data/Migrations
+    * * Udemy Course Ref: 2.13 Creating the Connection string
+
+3. Update our database
+    * In terminal: dotnet ef database update
+    * To see the database > install SQLite extension
+    * * Udemy Course Ref: 2.14 Creating the database...
