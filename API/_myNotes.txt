@@ -12,4 +12,17 @@
 3. Update our database
     * In terminal: dotnet ef database update
     * To see the database > install SQLite extension
-    * * Udemy Course Ref: 2.14 Creating the database...
+    * Udemy Course Ref: 2.14 Creating the database...
+
+4. Install the Angular CLI & create Angular application
+    * npm install -g @angular/cli
+    * ng new client
+        - you might get this error: "ng : File C:\Users\<CurrentUser>\AppData\Roaming\npm\ng.ps1 cannot be loaded..."
+        - fix: Set-ExecutionPolicy RemoteSigned -Scope CurrentUser --> Get-ExecutionPolicy -list (CurrenteUser need to be set to RemoteSigned)
+    * Udemy Course Ref: 3.20 Creating the Angular application
+
+5. Installing Angular Bootstrap (ngx-bootstrap) & font-awesome
+    * You need to be positioned in the /client folder
+    * ng add ngx-bootstrap
+    * npm install font-awesome
+    * Udemy Course Ref: 3.26 Adding bootstrap and font-awesome
