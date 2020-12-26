@@ -26,3 +26,14 @@
     * ng add ngx-bootstrap
     * npm install font-awesome
     * Udemy Course Ref: 3.26 Adding bootstrap and font-awesome
+
+6. Debugging
+    * First set a breakpoint where needed
+    * Then go to Run section in VS Code, in the drop-down select ".NET Core Attach" (app has to be running) and click the green button
+    * When asked about the process to attach to, select "API.exe" one
+    * Udemy Course Ref: 4.36 Using the debugger
+
+7. Recreate database
+    * dotnet ef databse drop
+    * dotnet ef database update
+    * Udemy Course Ref: 4.39 Adding a login endpoint
