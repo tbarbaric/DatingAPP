@@ -1,0 +1,1 @@
+1. Navigating methods and typing to get to them: CTRL + SHIFT + .    (for classes that have a lot of methods and stuff)
