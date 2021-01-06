@@ -14,10 +14,10 @@
                 <!-- <app-register [usersFromHomeComponent]="users"></app-register> -->
                 
                 <!-- so, register component is a child of our home component, and we're passing users to register component (see 5.59 Parent to child communication) -->
-                <app-register [usersFromHomeComponent]="users" (cancelRegister)="cancelRegisterMode($event)"></app-register>
+                <!-- <app-register [usersFromHomeComponent]="users" (cancelRegister)="cancelRegisterMode($event)"></app-register> -->
                 <!-- when we're receiving data from a parent, that goes in []; when we're sending data from a child, that goes to () -->
                 
-                <!-- <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register> -->
+                <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
             </div>
         </div>
     </div>
