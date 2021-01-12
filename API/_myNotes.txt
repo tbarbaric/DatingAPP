@@ -53,3 +53,21 @@
 
     * ng g c home --skip-tests (position needs to be on the right folder: src\app)
     * Udemy Course Ref: 5.57 Adding a home page
+
+9. Installing toastr
+    * You need to be positioned in the /client folder
+    * npm install ngx-toastr
+    * Udemy Course Ref: 6.67 Adding a toast service for notifications
+
+10. Installing Angular route guard
+    * ng g guard auth --skip-tests (position needs to be on the right folder: app/_guards)
+    * Udemy Course Ref: 6.68 Adding an Angular route guard
+
+11. Installing bootswatch
+    * You need to be positioned in the /client folder
+    * npm install bootswatch
+    * Udemy Course Ref: 6.70 Adding a new theme
+
+12. Creating a shared module
+    * ng g m shared --flat
+    * Udemy Course Ref: 6.71 Tidying up the app module by using a shared module
