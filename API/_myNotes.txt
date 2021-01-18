@@ -54,6 +54,9 @@
     * ng g c home --skip-tests (position needs to be on the right folder: src\app)
     * Udemy Course Ref: 5.57 Adding a home page
 
+    * ng g interceptor error --skip-tests
+    * Udemy Course Ref: 7.78 Adding an error interceptor
+
 9. Installing toastr
     * You need to be positioned in the /client folder
     * npm install ngx-toastr
