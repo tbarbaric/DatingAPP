@@ -1,13 +1,13 @@
-1. To install dotnet-ef tool: 
+1. To install dotnet-ef tool
     * Go to nuget.org
     * Search for "dotnet-ef" > choose the "dotnet-ef" result (first result ?!)
     * Copy the command and run it in VS Code terminal ("dotnet tool install --global dotnet-ef --version 5.0.1")
     * Notice that 5.0.1 is the version of .NET Runtime I'm using and EF Core I installed before (all have to be in sync ?!)
     * Udemy Course Ref: 2.13 Creating the Connection string
 
-2. Create the first migration:
+2. Create the first migration
     * In terminal: dotnet ef migrations add InitialCreate -o Data/Migrations
-    * * Udemy Course Ref: 2.13 Creating the Connection string
+    * Udemy Course Ref: 2.13 Creating the Connection string
 
 3. Update our database
     * In terminal: dotnet ef database update
@@ -18,6 +18,10 @@
     * bob / Pa$$w0rd
     * dave / Pa$$w0rd
     * jane / Pa$$w0rd
+
+3.2 To see SQLite Explorer
+    * Command Palette -> type 'sql' --> choose 'SQLite: Open Database' --> choose 'datingapp.db'
+    * Right click on one of the tabs (for example, Outline or Timeline tab) and toggle 'SQLite Explorer'
 
 4. Install the Angular CLI & create Angular application
     * npm install -g @angular/cli
@@ -74,3 +78,8 @@
 12. Creating a shared module
     * ng g m shared --flat
     * Udemy Course Ref: 6.71 Tidying up the app module by using a shared module
+
+13. EF relationships
+    * Discussion on AppUser <--> Photo relationship
+    * In terminal: 1. dotnet ef migrations add ExtendedUserEntity 2. dotnet ef database update
+    * Udemy Course Ref: 8.86 Entity Framework relationships
