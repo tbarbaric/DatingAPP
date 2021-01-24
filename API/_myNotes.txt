@@ -83,3 +83,8 @@
     * Discussion on AppUser <--> Photo relationship
     * In terminal: 1. dotnet ef migrations add ExtendedUserEntity 2. dotnet ef database update
     * Udemy Course Ref: 8.86 Entity Framework relationships
+
+14. Installing ngx-gallery (@kolkov)
+    * You need to be positioned in the /client folder
+    * npm install @kolkov/ngx-gallery
+    * Udemy Course Ref: 9.111 Adding a photo gallery

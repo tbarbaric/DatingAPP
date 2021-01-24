@@ -2,17 +2,19 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ReplaySubject } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 import { User } from '../_models/user';
 
 /* 
   1. Injectable means that service can be injected into other components or other services
-  2. Angular service is a singleton (see 5.50 Introduction to Angular services)
+  2. Angular service is a singleton (see '5.50 Introduction to Angular services')
 */
 @Injectable({
   providedIn: 'root'
 })
 export class AccountService {
-  baseUrl = 'https://localhost:5001/api/';
+  //baseUrl = 'https://localhost:5001/api/';
+  baseUrl = environment.apiUrl; // see '9.102 Adding a member service' (get rid of hard-coded strings)
 
     // See '5.55 Persisting the login' for details
     private currentUserSource = new ReplaySubject<User>(1);
