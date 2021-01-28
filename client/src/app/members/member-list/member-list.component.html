@@ -5,8 +5,15 @@
 </div> -->
 
 <!-- see '9.104 Creating member cards' -->
-<div class="row">
+<!-- <div class="row">
     <div *ngFor="let member of members" class="col-2">
+        <app-member-card [member]="member"></app-member-card>
+    </div>
+</div> -->
+
+<!-- // see '10.121 Using Using the service to store state' -->
+<div class="row">
+    <div *ngFor="let member of members$ | async" class="col-2">
         <app-member-card [member]="member"></app-member-card>
     </div>
 </div>

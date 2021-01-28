@@ -88,3 +88,8 @@
     * You need to be positioned in the /client folder
     * npm install @kolkov/ngx-gallery
     * Udemy Course Ref: 9.111 Adding a photo gallery
+
+15. Installing ngx-spinner
+    * You need to be positioned in the /client folder
+    * 'npm i ngx-spinner --save' or 'ng add ngx-spinner' (possibly need to run before: npm install @angular/cdk)
+    * Udemy Course Ref: 10.120 Adding loading indicators

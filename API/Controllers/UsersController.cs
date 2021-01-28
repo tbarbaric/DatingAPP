@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using API.Data;
 using API.DTOs;
@@ -58,6 +59,23 @@ namespace API.Controllers
             // return _mapper.Map<MemberDto>(user);
 
             return await _userRepo.GetMemberAsync(username); // see '8.97 Using AutoMapper queryable extensions' for this optimization
+        }
+
+        // see '10.118 Persisting the changes in the API' for details
+        [HttpPut]
+        public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
+        {
+            var username = User.FindFirst(ClaimTypes.NameIdentifier)?.Value; // get the username from the token
+            var user = await _userRepo.GetUserByUsernameAsync(username);
+
+            _mapper.Map(memberUpdateDto, user);
+
+            _userRepo.Update(user);
+
+            if (await _userRepo.SaveAllAsync())
+                return NoContent();
+
+            return BadRequest("Failed to update user");
         }
     }
 }
