@@ -5,6 +5,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { FileUploadModule } from 'ng2-file-upload';
 
 // see '6.71 Tidying up the app module...' for more details
 // see '9.110 Styling the member detailed page part two' on details for adding TabsModule
@@ -21,14 +22,16 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     }),
     TabsModule.forRoot(),
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FileUploadModule
   ],
   exports: [
     BsDropdownModule,
     ToastrModule,
     TabsModule,
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FileUploadModule
   ]
 })
 export class SharedModule { }

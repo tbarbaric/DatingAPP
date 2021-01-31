@@ -63,4 +63,14 @@ export class MembersService {
       })
     );
   }
+
+  // see '11.135 Setting the main photo in the client' for details
+  setMainPhoto(photoId: number) {
+    return this.http.put(this.baseUrl + 'users/set-main-photo/' + photoId, {});
+  }
+
+  // see '11.137 Deleting photos - Client' for details
+  deletePhoto(photoId: number) {
+    return this.http.delete(this.baseUrl + 'users/delete-photo/' + photoId);
+  }
 }

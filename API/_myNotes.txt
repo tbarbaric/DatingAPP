@@ -93,3 +93,8 @@
     * You need to be positioned in the /client folder
     * 'npm i ngx-spinner --save' or 'ng add ngx-spinner' (possibly need to run before: npm install @angular/cdk)
     * Udemy Course Ref: 10.120 Adding loading indicators
+
+16. Installing ng2-file-upload
+    * You need to be positioned in the /client folder
+    * npm install ng2-file-upload
+    * Udemy Course Ref: 11.131 Adding a photo uploader
