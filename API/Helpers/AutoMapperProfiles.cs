@@ -22,6 +22,8 @@ namespace API.Helpers
             CreateMap<Photo, PhotoDto>();
 
             CreateMap<MemberUpdateDto, AppUser>(); // see '10.118 Persisting the changes in the API' for details
+
+            CreateMap<RegisterDto, AppUser>(); // see '12.148 Updating the API register method' for details
         }
     }
 }
